@@ -4,20 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anushka Mandloi | Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    @font-face {
-      font-family: 'Proxima Nova';
-      src: local('Proxima Nova'), local('ProximaNova');
+    html {
+      scroll-behavior: smooth;
     }
     body {
-      font-family: 'Proxima Nova', 'Inter', sans-serif;
+      font-family: 'Rubik', sans-serif;
       margin: 0;
       padding: 0;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #333;
-      scroll-behavior: smooth;
     }
     nav {
       background-color: rgba(18, 60, 105, 0.8);
@@ -44,26 +42,31 @@
     }
     nav .contact {
       display: flex;
-      gap: 2rem;
+      gap: 2.5rem;
     }
     header {
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.5);
       color: #AC3B61;
       padding: 3rem 2rem;
       text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      margin: 2rem;
     }
     main {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.5);
       border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
     section {
       margin-bottom: 3rem;
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.6s ease-in-out;
+      scroll-margin-top: 90px;
     }
     section.show {
       opacity: 1;
