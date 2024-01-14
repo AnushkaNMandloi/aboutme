@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anushka Mandloi | Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #EEE2DC;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: #123C69;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav .nav-links a, nav .contact a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav .nav-links a:hover, nav .contact a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: #EEE2DC;
+      color: #AC3B61;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+    }
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .project, .experience {
+      background: #FFF;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover, .experience:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #123C69;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <div class="contact">
+      <a href="mailto:anushkanmandloi@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/anushkamandloi" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Anushka Mandloi</h1>
+    <p>Software Engineer | Cloud | Full-Stack | Problem Solver</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a client-focused software engineer experienced in delivering scalable, secure, and efficient solutions across healthcare, finance, and technology. Passionate about problem-solving, cloud architecture, and building applications that improve lives.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p><strong>Languages:</strong> Java, C++, Python, SQL, JavaScript<br>
+      <strong>Frameworks:</strong> Spring Boot, React, Angular, Node.js, Hibernate<br>
+      <strong>Cloud & DevOps:</strong> AWS, Jenkins, GitHub Actions, Docker, Kubernetes<br>
+      <strong>Tools:</strong> Redis, Elasticsearch, MongoDB, OAuth, JWT, JUnit, Selenium</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience">
+        <h3>Software Engineer — ConsultAdd, Inc.</h3>
+        <p><em>Feb 2025 – Present</em></p>
+        <ul>
+          <li>Led on-prem to AWS cloud migration for enterprise apps, improving reliability and reducing costs.</li>
+          <li>Built scalable cloud solutions using EC2, S3, ELB, and GitHub Actions.</li>
+          <li>Collaborated with clients to align cloud strategy with business outcomes.</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h3>Software Engineering Intern — Bright Horizons</h3>
+        <p><em>Jul 2023 – Dec 2023</em></p>
+        <ul>
+          <li>Enhanced payment subsystem for higher reliability and performance.</li>
+          <li>Worked with cross-functional teams and upstream clients to deliver secure, scalable features.</li>
+          <li>Used modern Java test frameworks to ensure robust functionality.</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h3>Software Developer — Capgemini India Pvt Ltd</h3>
+        <p><em>Apr 2020 – Jul 2022</em></p>
+        <ul>
+          <li>Designed and implemented features for medical imaging apps from requirements to deployment.</li>
+          <li>Reduced system errors by 30% and led a team of 5 developers.</li>
+          <li>Handled stakeholder communication and user acceptance testing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Agile Task Management System</h3>
+        <ul>
+          <li>Built with React and Spring Boot for efficient task management.</li>
+          <li>Enabled secure access with OAuth and JWT; supported real-time dashboards.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Health Management System</h3>
+        <ul>
+          <li>Created REST APIs and secure health data handling with Spring Boot and Redis.</li>
+          <li>Used Elasticsearch for fast hierarchical record search.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Banking System</h3>
+        <ul>
+          <li>Desktop banking tool using Java Swing and Hibernate with MySQL database.</li>
+          <li>Improved data access and user security with SHA-256 encryption.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Financial Risk Analyzer</h3>
+        <ul>
+          <li>Analyzed historical stock data with Python to identify risk patterns.</li>
+          <li>Visualized trends and results using Matplotlib.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Real-Time Trading Dashboard</h3>
+        <ul>
+          <li>Simulated live stock data visualization using React and WebSocket mock data.</li>
+          <li>Interactive UI elements for filtering and sorting trades.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Portfolio Management Simulator</h3>
+        <ul>
+          <li>Simulated investment portfolio actions with Java, Spring Boot, and MySQL.</li>
+          <li>Enabled asset tracking and return calculations with simple visual output.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anushka Mandloi | Built with HTML & CSS</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const options = {
+      threshold: 0.1
+    };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
+
