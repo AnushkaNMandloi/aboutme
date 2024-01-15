@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anushka Mandloi | Software Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -103,6 +104,33 @@
       font-size: 0.9rem;
       color: #666;
     }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+      justify-content: center;
+    }
+    .skill-category {
+      padding: 1rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.6);
+      transition: background 0.3s;
+    }
+    .skill-category:hover {
+      background: rgba(255, 255, 255, 0.9);
+    }
+    .skill-category i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .skill-list {
+      color: #aaa;
+      transition: color 0.3s;
+    }
+    .skill-category:hover .skill-list {
+      color: #333;
+    }
   </style>
 </head>
 <body>
@@ -131,11 +159,44 @@
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
-      <p><strong>Languages:</strong> Java, C++, Python, SQL, JavaScript<br>
-      <strong>Frameworks:</strong> Spring Boot, React, Angular, Node.js, Hibernate<br>
-      <strong>Cloud & DevOps:</strong> AWS, Jenkins, GitHub Actions, Docker, Kubernetes<br>
-      <strong>Tools:</strong> Redis, Elasticsearch, MongoDB, OAuth, JWT, JUnit, Selenium</p>
+      <h2 style="text-align: center;">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <i class="fas fa-code"></i>
+          <h3>Languages</h3>
+          <p class="skill-list">Java, C++, C, Python, JavaScript, HTML/CSS, SQL</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-cubes"></i>
+          <h3>Frameworks & Libraries</h3>
+          <p class="skill-list">Spring Boot, React, Node.js, Angular, Bootstrap, NumPy, Pandas, Matplotlib</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud & DevOps</h3>
+          <p class="skill-list">AWS, Jenkins, GitHub Actions, Kubernetes, Docker</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-database"></i>
+          <h3>Databases</h3>
+          <p class="skill-list">MongoDB, Redis, PostgreSQL, Elasticsearch, RabbitMQ</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-lock"></i>
+          <h3>Authentication</h3>
+          <p class="skill-list">OAuth 2.0, JWT</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-vial"></i>
+          <h3>Testing</h3>
+          <p class="skill-list">JUnit, Selenium</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-tools"></i>
+          <h3>Tools</h3>
+          <p class="skill-list">GitHub, Bitbucket, SVN, Redmine, JIRA, Confluence, Unix, Linux, VIM, Figma, Moqups</p>
+        </div>
+      </div>
     </section>
 
     <section id="experience">
