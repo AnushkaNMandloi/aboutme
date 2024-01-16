@@ -308,18 +308,23 @@
 
   <script>
     const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(entries => {
+    const options = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         }
       });
-    }, { threshold: 0.1 });
-    sections.forEach(section => observer.observe(section));
+    }, options);
+    sections.forEach(section => {
+      observer.observe(section);
+    });
 
-    function toggleMobileMenu() {
-      document.getElementById("mobileMenu").classList.toggle("active");
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+      document.getElementById("contactLinks").classList.toggle("show");
     }
   </script>
 </body>
 </html>
+
